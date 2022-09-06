@@ -1,0 +1,631 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html{
+    font-family: Helvetica, Arial,  sans-serif;
+    font-size: 16px;
+}#sec1{
+    padding-top: 20px;
+    background: url(../images/banner.jpg) no-repeat center center;
+    height: 100vh;
+    background-size: auto 150%;
+}
+#sec1 nav{
+    background-color: #000;
+    color: #fff;
+}
+.wrapper{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sec1 nav .wrapper{
+    text-align: right;
+    padding: 10px;
+}
+#sec1 nav .wrapper label{
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+}
+#sec1 nav .wrapper a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: thin solid #FFD22D;
+}
+#sec1 nav .wrapper a:hover{
+    color: #FFBC00;
+    text-decoration: none;
+}
+#sec1 nav .wrapper input{
+    display: none;
+}
+#sec1 nav .wrapper ul{
+    text-align: center;
+}
+#sec1 nav .wrapper ul li:nth-of-type(5) i{
+    margin-top: 5px;
+    padding: 5px 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#sec1 nav .wrapper li:nth-of-type(6) i{
+    padding: 5px 8px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+#sec1 nav .wrapper li:last-of-type i{
+    padding: 5px 7px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+#sec1 nav .wrapper>ul{
+    display: none;
+    list-style-type: none;
+}
+#sec1 nav .wrapper input:checked+ul{
+    display: block;
+}
+#sec1 .wrapper article{
+    display: flex;
+    flex-direction: column;
+    margin: 78px 20px
+}
+#sec1 .wrapper article h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#sec1 .wrapper article h1{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#sec1 .wrapper article h1:last-of-type{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #CD8383;
+}
+#sec1 .wrapper article a{
+    margin-top: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000;
+    border: thin solid #fff;
+    border-radius: 30px;
+    background-color: #fff;
+    width: 160px;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 15px;
+}
+#sec2{
+    background-color: #000;
+    color: #fff;
+    padding: 25px;
+}
+#sec2 .wrapper{
+    margin-top: 0;
+}
+#sec2 .wrapper h1{
+    color: #FAC769;
+    
+}
+#sec2 .wrapper p{
+    text-align: justify;
+    font-size: 0.8rem;
+}
+#sec3{
+    background-color: #FFC700;
+    padding: 30px;
+}
+#sec3 .wrapper h1{
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+#sec4{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+#sec4 h2{
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+#sec4 .cards{
+    display: flex;
+    flex-direction: column;
+    margin-left: -227px;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+#sec4 .cards h5{
+    color: #FFBD00;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#sec4 .cards img{
+    width: 250px;
+}
+#sec4 .cards .skew{
+    height: 20px;
+    width: 100%;
+    margin-top: -20px;
+    overflow: hidden;
+    position: relative;
+}
+#sec4 .cards .skew div{
+    height: 20px;
+    width: 100%;
+    position: absolute;
+}
+#sec4 .cards .skew div:first-of-type{
+   background-color: #CD9E38;
+   transform-origin: top right;
+   transform: rotate(-2deg);
+}
+#sec4 .cards .skew div:last-of-type{
+    background-color: #000;
+    transform-origin: top left;
+    transform: rotate(2deg);
+ }
+
+#sec4 .cards p{
+    width: 250px;
+    text-align: justify;
+    font-size: 0.5rem;
+    margin-bottom: 10px;
+    padding:10px;
+    color: #fff;
+}
+#sec4 .cards .pic1{
+   background-color: #000;
+    margin-bottom: 5px;
+}
+#sec4 .cards .pic2{
+    background-color: #000;
+    margin-bottom: 5px;
+}
+#sec4 .cards .pic3{
+    background-color: #000;
+    margin-bottom: 5px;
+}
+#sec4 .cards .pic1 .dis{
+    position: relative;
+}
+#sec4 .cards .pic1 .dis span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.4);
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+#sec4 .cards .pic2 .dis{
+    position: relative;
+}
+#sec4 .cards .pic2 .dis span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.4);
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+#sec4 .cards .pic3 .dis{
+    position: relative;
+}
+#sec4 .cards .pic3 .dis span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.4);
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+#sec5{
+    background-color: #000;
+    padding: 30px 0;
+}
+#sec5 .wrapper{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sec5 .wrapper div{
+    margin-bottom: 10px;
+}
+#sec5 .wrapper div img{
+    max-width: 100%;
+    height: auto;
+}
+#sec6 .wrapper{
+    background-color: #FFC700;
+    padding: 35px 0;
+}
+#sec6 .wrapper article h3{
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 0.9rem;
+    text-align: center;
+}
+#sec6 .wrapper article h1{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#sec6 .wrapper article a{
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#sec7{
+    background-color: #000;
+    color:#fff;
+    padding: 35px 0;
+}
+#sec7 .wrapper{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#sec7 .wrapper>h1{
+    text-transform: capitalize;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+#sec7 .wrapper>p{
+    font-size: 0.8rem;
+    text-align: justify;
+    width: 70%;
+    margin-bottom: 20px;
+}
+#sec7 .wrapper aside img{
+    width: 460px;
+}
+#sec7 .wrapper article:last-of-type div{
+    width: 50%;
+}
+#sec7 .wrapper article h4{
+    text-transform: capitalize;
+    font-weight: 300;
+}
+#sec7 .wrapper aside{
+    margin-bottom: 20px;
+}
+#sec7 .wrapper article div{
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+#sec7 .wrapper article div h1{
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+#sec7 .wrapper article div h4{
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+#sec7 .wrapper article:last-of-type p{
+    padding-bottom: 15px;
+}
+#sec8{
+    padding: 30px 0;
+    background: linear-gradient(#00c4ff38,#00c4ff38), url(../images/contactus.jpg) no-repeat center center;;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+#sec8 .wrapper aside{
+    margin-left: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#sec8 .wrapper aside h1{
+    color: #FFBD00;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#sec8 .wrapper aside p{
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+#sec8 .wrapper form{
+    box-shadow: 0 0 7px 3px #FFBD00;
+    width: 60%;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+#sec8 .wrapper form *{
+    width: 100%;
+    margin-left: 0.25px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+#sec8 .wrapper form button{
+    background-color: #FFBC00;
+    color: #715D23;
+    text-transform: uppercase;
+}
+footer{
+    background-color: #000;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    border-top: 10px solid #FECE16;
+}
+footer a{
+    color: #fff;  
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+footer div a{
+    display: block;
+}
+footer .sec9{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+footer .middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+footer article{
+    display: flex;
+    flex-direction: column;
+}
+footer .third{
+    display: flex;
+  padding-right: 10px;
+   height: 50%;
+   margin-bottom: 9px;
+   width: 20%;
+}
+footer article .third a{
+    margin-left: 5px;
+}
+footer .last{
+   display: flex;
+   flex-direction: column;
+}
+footer .last input{
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+footer .last button{
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    padding: 10px 10px;
+    width: 60%;
+    margin-top: 15px;
+    border: none;
+    letter-spacing: 2px;
+}
+footer i{
+    display: inline-block;
+    margin-right: 5px;
+    text-align: right;
+}
+footer a:hover{
+    color: #FFBC00;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+@media(min-width: 576px){
+}
+@media(min-width: 768px){
+    .wrapper{
+        max-width: 100%;
+    }
+    #sec1 nav .wrapper label{
+        display: none;
+    }
+    #sec1 nav .wrapper ul, #sec1 nav .wrapper input:checked+ul{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    #sec1 nav .wrapper ul li{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #sec1 nav .wrapper a{
+        border-bottom: none;
+    }
+    #sec1 nav .wrapper li:nth-of-type(6) i{
+        margin-right: 20px;
+        margin-left: -14px;
+    }
+    #sec1 nav .wrapper li:last-of-type i{
+        margin-right: 20px;
+        margin-left: -34px;
+    }
+    #sec5 .wrapper{
+        width: 720px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #sec5 .wrapper div{
+        width: 49%;
+    }
+    #sec6 .wrapper{
+        display: flex;
+        align-items: center;
+    }
+    #sec6 .wrapper article:first-of-type{
+        flex-basis: 75%;
+        margin-left: 200px;
+    }
+    #sec6 .wrapper article:last-of-type{
+        flex-basis: 25%;
+        margin-right: 110px;
+    }
+    #sec6 .wrapper article h3,#sec6 .wrapper article h1{
+        text-align: left;
+    }
+    #sec6 .wrapper article a{
+        width: auto;
+        margin-right: 40px;
+    }
+    #sec7 .wrapper .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #sec7 .wrapper .container aside {
+        width: 50%;
+    }
+    #sec7 .wrapper .container aside img{
+        width: 100%;
+    }
+    #sec7 .wrapper .container article{
+        display: flex;
+        width: 45%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #sec7 .wrapper .container article div{
+        width: 49%;
+        flex-wrap: wrap;
+    }
+    #sec8 .wrapper aside h1{
+        text-align:left ;
+    }
+    #sec8 .wrapper aside p{
+        text-align: left;
+    }
+    footer{
+        font-size: 1.5rem;
+    }
+    footer .sec9{
+        flex-basis: 40%;
+    }
+    footer .middle{
+        flex-basis:30%
+    }
+}
+@media(min-width: 992px){
+    #sec1 .wrapper article{
+        margin: 200px 200px
+    }
+    #sec4 .cards{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #sec4 .cards .pic1{
+        margin-right: 15px;
+    }
+    #sec4 .cards .pic2{
+        margin-right: 15px;
+    }
+    #sec4 .cards .pic3{
+        margin-right: 15px;
+    }
+    #sec5 .wrapper{
+        width: 940px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #sec5 .wrapper div{
+        width: 24%;
+    }
+    #sec8 .wrapper{
+        display: flex;
+    }
+    #sec8 .wrapper aside{
+        flex-basis: 45%;
+    }
+    #sec8 .wrapper form{
+        flex-direction: column;
+        flex-basis: 34%;
+    }
+    footer .sec9{
+        flex-basis: 25%;
+    }
+    footer .middle{
+        flex-basis:26%
+    }
+    footer article{
+        flex-basis: 30%;
+    }
+}
+   
+@media(min-width: 1200px){
+    #sec5 .wrapper{
+        width: 1160;
+    }
+    #sec7 .wrapper{
+        font-size: 2rem;
+    }
+    #sec7 .wrapper aside div:nth-of-type(2){
+        margin-left: 854px;
+        margin-top: -404px;
+    }
+    #sec7 .wrapper aside div:nth-of-type(3){
+        margin-left: 565px;
+        margin-top: -246px;
+    }
+    #sec7 .wrapper aside div:nth-of-type(4){
+        margin-left: 855px;
+        margin-top: -246px;
+    }
+}
